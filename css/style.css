@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Ibarra Real Nova', serif;
+    min-width: 1280px;
+    min-height: 100%;
+
+}
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.wrapper{
+    min-width: 1280px;
+    margin: 0px auto;
+}
+.topnav{
+    text-align: center;
+    padding-top: 15px;
+}
+.topnav a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 15px;
+}
+.banner{
+    background-image: url(../img/banner.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 850px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+max-width: 100%;
+margin-top: 70px;
+opacity: 0.8;
+}
+.main-text{
+text-align: center;
+margin-top: 80px;
+}
+.main-text p{
+color: #ffffff;
+font-size: 49.35px;
+}
+.portfolio{
+max-width: 95%;
+margin: 0 auto;
+align-items: center;
+padding-top: 80px;
+margin-bottom: 80px;
+}
+.portfolio h1{
+text-align: center;
+font-size: 39px;
+
+}
+.portfolio h1:after {
+content: "";
+display: block;
+margin: 0 auto;
+width: 120px;
+padding-top: 20px;
+border-bottom: 3px solid #5fc18b;
+}
+.gallery {
+padding-top: 60px;
+display: grid;
+grid-template-columns: 33% 33% 33%;
+grid-gap: 25px;
+justify-items: center;
+justify-content: space-around;
+}
+.card{
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.card:hover{
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.card-text{
+width: 400px;
+background-color: #d2d2d2;
+margin-top: -5px;
+}
+.card-text p{
+text-align: center;
+}
+.my-skils{
+background-color: #5fc18b;
+text-align: center;
+padding-top: 80px;
+color: white;
+}
+.my-skils h1{
+font-size: 39px;
+}
+.my-skils h1:after {
+content: "";
+display: block;
+margin: 0 auto;
+width: 140px;
+padding-top: 20px;
+border-bottom: 3px solid white;
+}
+.skills-img{
+margin-top: 40px;
+margin-bottom: 40px;
+}
+.my-skills-text{
+margin: 0 auto;
+max-width: 80%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 80px;
+justify-items: center;
+margin-bottom: 60px;
+
+}
+
+.about-me{
+background-color: #44a36f;
+text-align: center;
+padding-top: 80px;
+color: white;
+}
+.about-me h1{
+margin-bottom: 40px;
+font-size: 39px;
+}
+.about-me h1:after {
+content: "";
+display: block;
+margin: 0 auto;
+width: 140px;
+padding-top: 20px;
+border-bottom: 3px solid white;
+}
+.line-3d{
+margin-bottom: -6px;
+width: 100%;
+}
+.about-me-block{
+width: 80%;
+display: flex;
+justify-content: space-around;
+justify-items: center;
+margin: 0 auto;
+}
+.about-me-text{
+padding-left: 40px;
+}
+.contact {
+background-image: url("../img/map.jpg");
+background-size: 100%;
+height: 100%;
+background-repeat: no-repeat;
+}
+.contact-form{
+width: 430px;
+height: 430px;
+border-radius: 100%;
+background-color: white;
+margin: 0 auto;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+opacity: 0.8;
+}
+.main-contact{
+padding-top: 8%;
+padding-bottom: 8%;
+}
+.contact-form{
+position: relative;
+}
+form{
+position: absolute;
+top: 95px;
+left: 65px;
+text-align: center;
+}
+.feedback{
+padding-left: 20px;
+padding-top: 5px;
+margin-top: 15px;
+width: 280px;
+font-size: 14px;
+line-height: 30px;
+font-family: 'Ibarra Real Nova', serif;
+font-weight: 600;
+outline:none;
+}
+textarea{
+resize: none;
+height: 80px;
+}
+button{
+margin-top: 25px;
+outline: none;
+border: 0;
+background: transparent;
+}
+footer{
+height: 50px;
+background-color: #43a06d;
+}
+.social{
+text-align: center;
+padding-top: 20px;
+}
+.social a{
+text-decoration: none;
+color: white;
+margin-right: 20px;
+}
+
+
+
+
+@media screen and (max-width: 765px) {
+    .banner{
+        height: auto;
+    }
+    .main-text{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+      .gallery{
+        grid-template-columns: 45% 45%;
+
+    .portfolio{
+        max-width: 80%;
+    }
+    .my-skills-text{
+        grid-template-columns: 1fr;
+    }
+    .my-skills-text p{
+        font-size: 22px;
+    }
+    .about-me-block {
+        font-size: 22px;
+    }
+    .feedback {
+        padding-top: 5px;
+        font-size: 22px;
+        line-height: 40px;
+    }
+    button {
+        margin-top: 15px;
+    }
+    .social {
+        padding-top: 5px;
+    }
+    .social i{
+        font-size: 40px;
+    }
+    .social a {
+        margin-right: 40px;
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width: 481px) {
+    .banner{
+        height: 850px;
+    }
+}
