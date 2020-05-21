@@ -80,10 +80,6 @@ nav {
     flex-direction: column;
     align-items: center;
 }
-.center{
-    display: flex;
-    justify-content: center;
-}
 
 .logo {
     max-width: 100%;
@@ -95,15 +91,15 @@ nav {
     margin-top: 80px;
 }
 .main-text p{
-color: #ffffff;
-font-size: 49.35px;
+    color: #ffffff;
+    font-size: 49.35px;
 }
 .portfolio{
-max-width: 95%;
-margin: 0 auto;
-align-items: center;
-padding-top: 80px;
-margin-bottom: 80px;
+    max-width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 80px;
+    margin-bottom: 80px;
 }
 .portfolio h1{
 text-align: center;
@@ -164,6 +160,10 @@ border-bottom: 3px solid white;
 .skills-img{
 margin-top: 40px;
 margin-bottom: 40px;
+}
+.my-skills-text h2{
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 .my-skills-text{
 margin: 0 auto;
@@ -287,7 +287,7 @@ margin-right: 20px;
 }
 .social span{
 color: white;
-margin-right: -250px;
+margin-right: -115px;
 font-size: 18px;
 letter-spacing: 0.3em;
 }
@@ -330,6 +330,128 @@ letter-spacing: 0.3em;
     }
 }
 */
+
+@media screen and (max-width: 1300px){
+    .gallery{
+        grid-template-columns: 45% 45%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .about-me-block{
+        display: block;
+        padding-bottom: 50px;
+    }
+    .about-me-text{
+        padding-left: 0;
+        margin-top: 15px;
+    }
+    .about-img{
+        text-align: center;
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .portfolio{
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+    .gallery{
+        grid-template-columns: 1fr;
+        padding-top: 30px;
+        justify-content: none;
+    }
+    .gallery img{
+        width: 100%;
+        height: auto;
+    }
+    .my-skills-text{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .about-me, .contact, .my-skils{
+        padding-top: 40px;
+    }
+    .contact h1{
+        padding-bottom: 0;
+    }
+    .social span{
+        margin-right: 0;
+    }
+} 
+@media screen and (max-width: 465px){
+    .portfolio h1, .my-skils h1, .about-me h1, .contact h1{
+        font-size: 30px;
+    }
+    .main-text{
+        font-size: 35px;
+    }
+    .about-img{
+        width: 80%;
+    }
+    .portfolio h1:after{
+        width: 30%;
+    }
+    .my-skils h1:after{
+        width: 30%;
+    }
+    .about-me h1:after{
+        width: 30%;
+    }
+    .contact h1:after{
+        width: 45%;
+    }
+    .contact-form{
+        position: inherit;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        background-color:inherit;
+    }
+    form{
+        position: inherit;
+    }
+    .social a{
+    margin-right: 10px;
+    }
+    .card-screen img{
+        overflow: hidden;
+    }
+   
+    .card-text{
+        width: auto;
+    }
+}
+    
+@media screen and (max-width: 325px){
+    .main-text p {
+        font-size: 100%;
+    }
+    .my-skills-text {
+        font-size: auto;
+    }
+    .feedback{
+        width: 80%; 
+    }
+    .social span{
+        display: none;
+    }
+    .logo img{
+        width: 100%;
+        height: auto;
+    }
+    .skills-img{
+        width: 80%;
+        height: auto;
+    }
+    .social a {
+        margin-right: 30px;
+    }
+}
+
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
